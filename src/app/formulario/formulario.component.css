@@ -1,0 +1,33 @@
+.content {
+    background: rgb(221, 221, 221);
+    padding: 15px;
+    border-top: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid rgb(204, 204, 204);
+
+    display: flex;
+    justify-content: center;
+}
+
+.form-select {
+    width: 20px ;
+    margin-right: 10px;
+}
+
+.descripcion  {
+    width: 300px;
+    margin-right: 10px;
+
+}
+
+.cantidad {
+    width: 100px;
+    margin-right: 10px;
+
+}
+
+.far {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(0, 143, 129);
+}

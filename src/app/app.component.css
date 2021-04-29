@@ -1,0 +1,40 @@
+.cabecera {
+    
+    position: relative;
+    max-width: 100%;
+    color: white;
+    background: url("https://fondosmil.com/fondo/494.jpg") no-repeat;    
+    background-size: cover;
+}
+
+.presupuesto-title {
+    padding-top: 20px;
+}
+
+.presupuesto-count {
+    margin: auto;
+    padding-bottom: 20px;
+    width: 300px;
+}
+
+.presupuesto-count div {
+    padding: 5px;
+}
+.ingresos {
+    height: 40px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    background: rgb(0, 168, 168);
+    display: flex;
+    justify-content: space-between;
+}
+
+.egresos {
+    height: 40px;
+    line-height: 30px;
+    background: rgb(228, 101, 16);
+    display: flex;
+    justify-content: space-between;
+}
+
+
