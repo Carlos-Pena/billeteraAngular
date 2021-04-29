@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "billeteraAngular"
+  "defaultProject": "billeteraAngular",
+  "cli": {
+    "analytics": false
+  }
 }
