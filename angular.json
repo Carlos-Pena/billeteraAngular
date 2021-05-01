@@ -24,13 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -126,6 +122,6 @@
   },
   "defaultProject": "billeteraAngular",
   "cli": {
-    "analytics": false
+    "analytics": "ef966870-c37b-4369-bc3d-a328a17d3461"
   }
 }

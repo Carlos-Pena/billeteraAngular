@@ -5,16 +5,16 @@
     border-bottom: 1px solid rgb(204, 204, 204);
 
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .form-select {
-    width: 20px ;
+    width: 65px !important ;
     margin-right: 10px;
 }
 
 .descripcion  {
-    width: 300px;
+    width: 200px;
     margin-right: 10px;
 
 }
@@ -30,4 +30,7 @@
     flex-direction: column;
     justify-content: center;
     color: rgb(0, 143, 129);
+}
+.far:hover {
+    cursor: pointer;
 }

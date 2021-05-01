@@ -1,40 +1,91 @@
 .cabecera {
-    
-    position: relative;
-    max-width: 100%;
-    color: white;
-    background: url("https://fondosmil.com/fondo/494.jpg") no-repeat;    
-    background-size: cover;
+  position: relative;
+  max-width: 100%;
+  color: white;
+  background: url("https://fondosmil.com/fondo/494.jpg") no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding-right: unset;
+  padding-left: unset;
 }
 
 .presupuesto-title {
-    padding-top: 20px;
+  padding-top: 20px;
+}
+
+.presupuesto-title p {
+  font-size: 80px;
 }
 
 .presupuesto-count {
-    margin: auto;
-    padding-bottom: 20px;
-    width: 300px;
+  padding-bottom: 20px;
+  margin: auto;
 }
 
-.presupuesto-count div {
-    padding: 5px;
+.presupuesto-component {
+  padding: 10px;
+  height: 50px;
+  margin: 10px auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.ingresos {
-    height: 40px;
-    line-height: 30px;
-    margin-bottom: 10px;
-    background: rgb(0, 168, 168);
-    display: flex;
-    justify-content: space-between;
-}
-
-.egresos {
-    height: 40px;
-    line-height: 30px;
-    background: rgb(228, 101, 16);
-    display: flex;
-    justify-content: space-between;
+.left {
+  display: flex;
+  justify-content: flex-start;
 }
 
+.rigth {
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+.separar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
 
+.egresos--porcentaje {
+  margin-top: 2px;
+  font-size: 12px;
+  padding: 2px;
+  background: rgb(255, 188, 143);
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.naranja {
+  background: rgb(233, 72, 9);
+}
+
+.celeste {
+  background: rgb(0, 189, 189);
+}
+
+.listado-component {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.ingresos-component {
+  margin-right: 10px;
+  width: 30%;
+  flex-wrap: wrap-reverse;
+}
+
+.egresos-component {
+  width: 30%;
+  flex-wrap: wrap-reverse;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  background: rgb(221, 221, 221);
+}

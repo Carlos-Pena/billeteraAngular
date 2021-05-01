@@ -1,1 +1,17 @@
-<p>ingresos works!</p>
+
+<table *ngIf="ingresos" class="table table-striped">
+
+    <tbody>
+        <tr>
+            <th class="celeste" colspan="2">{{title}}</th>
+        </tr>
+        <tr *ngFor="let ingreso of ingresos; let i = index">
+            <td class="ingreso-descr">{{ingreso.descripcion}}</td>
+            <td class="celeste d-flex">
+                <div class="ingreso--valor">{{ingreso.valor}}</div>
+                <i (click)="eliminarIngreso(ingreso)" style="font-size: 20px;" class="far fa-times-circle my-1"></i>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

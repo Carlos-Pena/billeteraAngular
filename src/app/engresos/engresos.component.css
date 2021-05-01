@@ -1,0 +1,35 @@
+.celeste {
+    color: rgb(0, 189, 189);
+}
+
+.naranja {
+    color: rgb(233, 72, 9);
+
+}
+
+.d-flex {
+    justify-content: space-between;
+}
+
+
+i {
+    opacity: 0%;
+    transition: .5s;
+}
+
+
+.naranja:hover i {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+
+.porcentaje {
+    margin-top: 2px;
+  font-size: 12px;
+  padding: 2px;
+  background: rgb(250, 206, 177);
+  background-size: cover;
+  border-radius: 5px;
+}

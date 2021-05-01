@@ -1,12 +1,12 @@
 <div class="content text-center">
 
-    <select class="form-select" name="tipoIngreso" id="tipoIngreso">
+    <select #tipoIngreso class="form-select" name="tipoIngreso" id="tipoIngreso" (change)="selectedChange(tipoIngreso.value)">
         <option value="+">+</option>
         <option value="-">-</option>
     </select>
 
-    <input class="descripcion form-control" type="text" placeholder="Agregar Descripción">
-    <input class="cantidad form-control" type="number" placeholder="Valor">
-    <i class="far fa-check-circle fa-2x"></i>
+    <input [(ngModel)]="descripcion"  class="descripcion form-control" type="text" placeholder="Agregar Descripción">
+    <input [(ngModel)]="valor" class="cantidad form-control" type="number" placeholder="Valor">
+    <i (click)="nuevoRegistro()" class="far fa-check-circle fa-2x"></i>
 
 </div>

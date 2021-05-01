@@ -1,21 +1,45 @@
-<div class="cabecera text-center">
-  <div class="presupuesto-title text-center">
-    <h4>{{title}}</h4>
-    <p>{{presupuestoDisponible}}</p>
+<div class="">
+
+  <div class="cabecera text-center">
+    <div class="presupuesto-title text-center">
+      <h4>{{title}}</h4>
+      <p>{{ingresos - egresos}}</p>
+    </div>
+
+    <div class="presupuesto-count">
+      <div class="presupuesto-component celeste">
+        <div class="left">INGRESOS</div>
+        <div class="rigth">
+          <div class="separar">
+            <p class="ingresos--valor">{{ingresos}}</p>
+            <p class="ingresos--porcentaje" style="visibility: hidden;">{{egresosPorcentaje | number:'1.0-0'}}%</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="presupuesto-component naranja">
+        <div class="left">EGRESOS</div>
+        <div class="rigth">
+          <div class="separar">
+            <p class="egresos--valor">{{egresos}}</p>
+            <p class="egresos--porcentaje">{{egresosPorcentaje | number:'1.0-0'}}%</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="presupuesto-count">
-    <div class="ingresos">
-      <p>INGRESOS</p>
-      <p>${{ingresos}} <span>%</span></p>
+  <div class="formulario">
+    <app-formulario></app-formulario>
+  </div>
+
+  <div class="listado-component">
+    <div class="ingresos-component">
+      <app-ingresos></app-ingresos>
     </div>
-    <div class="egresos">
-      <p>EGRESOS</p>
-      <p>-${{egresos}} <span>%</span></p>
+    <div class="egresos-component">
+      <app-engresos [ingresoTotal]="ingresos"></app-engresos>
     </div>
   </div>
-</div>
-
-<div class="formulario">
-  <app-formulario></app-formulario>
 </div>

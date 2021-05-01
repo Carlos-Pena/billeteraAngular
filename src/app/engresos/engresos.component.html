@@ -1,1 +1,20 @@
-<p>engresos works!</p>
+
+<table *ngIf="egresos" class="table table-striped">
+    <thead>
+        
+    </thead>
+    <tbody>
+        <tr>
+            <th class="naranja" colspan="2">{{title}}</th>
+        </tr>
+        <tr *ngFor="let egreso of egresos ; let i = index">
+            <td class="egreso-descr">{{egreso.descripcion}}</td>
+            <td class="naranja d-flex">
+                <div class="ingreso--valor">{{egreso.valor}}</div>
+                <div class="porcentaje" > {{calcularPorcentaje(egreso.getvalor()) | number : '1.0-0'}}%</div>
+                <i (click)="eliminarEgreso(i)" style="font-size: 20px;"class="far fa-times-circle my-1"></i>                
+            </td>
+        </tr>
+    </tbody>
+
+</table>

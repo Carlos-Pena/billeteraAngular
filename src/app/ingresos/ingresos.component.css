@@ -1,0 +1,30 @@
+.naranja {
+    color: rgb(233, 72, 9);
+
+}
+
+.celeste {
+    height: 100% !important;
+    color: rgb(0, 189, 189);
+}
+
+.ingreso-descr {
+    width: 80%;
+}
+
+.d-flex {
+    justify-content: space-between;
+}
+
+
+i {
+    opacity: 0%;
+    transition: .5s;
+}
+
+
+.celeste:hover i {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 100%;
+}
